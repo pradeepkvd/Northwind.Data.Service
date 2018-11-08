@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Data.Service", "Northwind.Data.Service\Northwind.Data.Service.csproj", "{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{3F00F36B-0A5A-41A9-AF59-5724635E1D75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7199A694-D706-4009-9BF3-5BD7F0D2CE3D}
+	EndGlobalSection
+EndGlobal
