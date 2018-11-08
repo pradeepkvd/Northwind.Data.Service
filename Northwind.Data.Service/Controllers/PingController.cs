@@ -8,7 +8,7 @@ namespace Northwind.Data.Service.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class PingController : ControllerBase
     {
         // GET api/values
         [HttpGet]

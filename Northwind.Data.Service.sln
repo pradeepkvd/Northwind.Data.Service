@@ -3,11 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Data.Service", "Northwind.Data.Service\Northwind.Data.Service.csproj", "{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Data.Service.REST", "Northwind.Data.Service\Northwind.Data.Service.REST.csproj", "{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{3F00F36B-0A5A-41A9-AF59-5724635E1D75}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Control", "Control", "{3F00F36B-0A5A-41A9-AF59-5724635E1D75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{19665D7A-15BC-4165-B026-4D2C2F96C9B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{652C2535-9124-4B40-9E73-D7B877341DFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedLib", "SharedLib", "{B510272A-CBD7-4670-9F1E-B374A17349A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnterpriseSharedLib", "EnterpriseSharedLib", "{AE65D4C3-46D4-426B-A646-547D0DF0825E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Northwind.Customer", "Northwind.Customer\Northwind.Customer.shproj", "{2722B0C1-9A0E-4CCD-AA14-00D2EDFD813E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Customer.Core", "Northwind.Customer.Core\Northwind.Customer.Core.csproj", "{04C4EA88-E785-4EDA-A7B3-100C2B9C81E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Service", "Northwind.Service\Northwind.Service.csproj", "{4E74325A-4BDC-4BB2-9834-8C1CC37D763D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Customer.DAL.Mongo", "Northwind.Customer.DAL.Mongo\Northwind.Customer.DAL.Mongo.csproj", "{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Customer.DAL.SQL", "Northwind.Customer.DAL.SQL\Northwind.Customer.DAL.SQL.csproj", "{422E0853-6C29-4468-A7FD-2FFD2E6CB489}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E178D526-D7E3-4FC8-A5C6-8BB401FAE481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Data.Service.Tests", "Northwind.Data.Service.Tests\Northwind.Data.Service.Tests.csproj", "{D5F73428-84B5-4B02-A71D-B45456319952}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Northwind.Customer\Northwind.Customer.projitems*{2722b0c1-9a0e-4ccd-aa14-00d2edfd813e}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -17,9 +42,38 @@ Global
 		{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C4EA88-E785-4EDA-A7B3-100C2B9C81E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C4EA88-E785-4EDA-A7B3-100C2B9C81E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C4EA88-E785-4EDA-A7B3-100C2B9C81E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C4EA88-E785-4EDA-A7B3-100C2B9C81E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E74325A-4BDC-4BB2-9834-8C1CC37D763D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E74325A-4BDC-4BB2-9834-8C1CC37D763D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E74325A-4BDC-4BB2-9834-8C1CC37D763D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E74325A-4BDC-4BB2-9834-8C1CC37D763D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422E0853-6C29-4468-A7FD-2FFD2E6CB489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422E0853-6C29-4468-A7FD-2FFD2E6CB489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422E0853-6C29-4468-A7FD-2FFD2E6CB489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422E0853-6C29-4468-A7FD-2FFD2E6CB489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F73428-84B5-4B02-A71D-B45456319952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F73428-84B5-4B02-A71D-B45456319952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F73428-84B5-4B02-A71D-B45456319952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F73428-84B5-4B02-A71D-B45456319952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14CAB3B5-1B5C-4DCA-8B93-93EC606E7BDF} = {3F00F36B-0A5A-41A9-AF59-5724635E1D75}
+		{2722B0C1-9A0E-4CCD-AA14-00D2EDFD813E} = {AE65D4C3-46D4-426B-A646-547D0DF0825E}
+		{04C4EA88-E785-4EDA-A7B3-100C2B9C81E5} = {19665D7A-15BC-4165-B026-4D2C2F96C9B7}
+		{4E74325A-4BDC-4BB2-9834-8C1CC37D763D} = {19665D7A-15BC-4165-B026-4D2C2F96C9B7}
+		{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F} = {652C2535-9124-4B40-9E73-D7B877341DFD}
+		{422E0853-6C29-4468-A7FD-2FFD2E6CB489} = {652C2535-9124-4B40-9E73-D7B877341DFD}
+		{D5F73428-84B5-4B02-A71D-B45456319952} = {E178D526-D7E3-4FC8-A5C6-8BB401FAE481}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7199A694-D706-4009-9BF3-5BD7F0D2CE3D}
