@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>be36707b-51c3-4a6d-a54e-4a26ddb80e84</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Enterprise.Lib.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CO\DynamicXml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CO\EventArg.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CO\IdUtility.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CO\Utf8StringWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extension\DataContextExtention.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extension\IQueryableExtentions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extension\LinqExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extension\ObjectExtention.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Base64Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\CSVHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\HttpHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\JsonHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IConnectionFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IdGuid.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IdInt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IdString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IIdentifier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\ILogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\INLUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IRepositoryEF.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IRepositoryReadOnly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interface\IServiceReadOnly.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ModelBase.cs" />
+  </ItemGroup>
+</Project>
