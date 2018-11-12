@@ -17,21 +17,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnterpriseSharedLib", "Ente
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Northwind.Customer", "Northwind.Customer\Northwind.Customer.shproj", "{2722B0C1-9A0E-4CCD-AA14-00D2EDFD813E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Customer.Core", "Northwind.Customer.Core\Northwind.Customer.Core.csproj", "{04C4EA88-E785-4EDA-A7B3-100C2B9C81E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Customer.Core", "Northwind.Customer.Core\Northwind.Customer.Core.csproj", "{04C4EA88-E785-4EDA-A7B3-100C2B9C81E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Service", "Northwind.Service\Northwind.Service.csproj", "{4E74325A-4BDC-4BB2-9834-8C1CC37D763D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Service", "Northwind.Service\Northwind.Service.csproj", "{4E74325A-4BDC-4BB2-9834-8C1CC37D763D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Customer.DAL.Mongo", "Northwind.Customer.DAL.Mongo\Northwind.Customer.DAL.Mongo.csproj", "{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Customer.DAL.Mongo", "Northwind.Customer.DAL.Mongo\Northwind.Customer.DAL.Mongo.csproj", "{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Customer.DAL.SQL", "Northwind.Customer.DAL.SQL\Northwind.Customer.DAL.SQL.csproj", "{422E0853-6C29-4468-A7FD-2FFD2E6CB489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Customer.DAL.SQL", "Northwind.Customer.DAL.SQL\Northwind.Customer.DAL.SQL.csproj", "{422E0853-6C29-4468-A7FD-2FFD2E6CB489}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E178D526-D7E3-4FC8-A5C6-8BB401FAE481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Data.Service.Tests", "Northwind.Data.Service.Tests\Northwind.Data.Service.Tests.csproj", "{D5F73428-84B5-4B02-A71D-B45456319952}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Data.Service.Tests", "Northwind.Data.Service.Tests\Northwind.Data.Service.Tests.csproj", "{D5F73428-84B5-4B02-A71D-B45456319952}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Enterprise.Lib.Core", "Enterprise.Lib.Core\Enterprise.Lib.Core.shproj", "{BE36707B-51C3-4A6D-A54E-4A26DDB80E84}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Enterprise.Lib.DataAccess", "Enterprise.Lib.DataAccess\Enterprise.Lib.DataAccess.shproj", "{F52DB0A0-AD21-465D-8CF7-2A86C2B587AF}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Enterprise.Lib.Logging", "Enterprise.Lib.Logging\Enterprise.Lib.Logging.shproj", "{63B1AEFD-0029-40F4-A159-EA044C39527F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Enterprise.Lib.Service", "Enterprise.Lib.Service\Enterprise.Lib.Service.shproj", "{583C6ECA-3A2C-4AB3-812A-290269A34E48}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Northwind.Customer\Northwind.Customer.projitems*{2722b0c1-9a0e-4ccd-aa14-00d2edfd813e}*SharedItemsImports = 13
+		Enterprise.Lib.Service\Enterprise.Lib.Service.projitems*{583c6eca-3a2c-4ab3-812a-290269a34e48}*SharedItemsImports = 13
+		Enterprise.Lib.Logging\Enterprise.Lib.Logging.projitems*{63b1aefd-0029-40f4-a159-ea044c39527f}*SharedItemsImports = 13
+		Enterprise.Lib.Core\Enterprise.Lib.Core.projitems*{be36707b-51c3-4a6d-a54e-4a26ddb80e84}*SharedItemsImports = 13
+		Enterprise.Lib.DataAccess\Enterprise.Lib.DataAccess.projitems*{f52db0a0-ad21-465d-8cf7-2a86c2b587af}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +86,10 @@ Global
 		{7F1D099B-1F10-4BA1-AAF4-C6E8B1153C0F} = {652C2535-9124-4B40-9E73-D7B877341DFD}
 		{422E0853-6C29-4468-A7FD-2FFD2E6CB489} = {652C2535-9124-4B40-9E73-D7B877341DFD}
 		{D5F73428-84B5-4B02-A71D-B45456319952} = {E178D526-D7E3-4FC8-A5C6-8BB401FAE481}
+		{BE36707B-51C3-4A6D-A54E-4A26DDB80E84} = {AE65D4C3-46D4-426B-A646-547D0DF0825E}
+		{F52DB0A0-AD21-465D-8CF7-2A86C2B587AF} = {AE65D4C3-46D4-426B-A646-547D0DF0825E}
+		{63B1AEFD-0029-40F4-A159-EA044C39527F} = {AE65D4C3-46D4-426B-A646-547D0DF0825E}
+		{583C6ECA-3A2C-4AB3-812A-290269A34E48} = {AE65D4C3-46D4-426B-A646-547D0DF0825E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7199A694-D706-4009-9BF3-5BD7F0D2CE3D}
