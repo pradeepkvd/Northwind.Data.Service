@@ -1,11 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.7.1" />
+=======
+  <Import Project="..\Enterprise.Lib.Logging\Enterprise.Lib.Logging.projitems" Label="Shared" />
+
+  <Import Project="..\Enterprise.Lib.Core\Enterprise.Lib.Core.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="ServiceStack.Text" Version="5.4.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+>>>>>>> b5cc5c9cfc420a14d7ea2c00f342eeaee9b00dc7
   </ItemGroup>
 
 </Project>
