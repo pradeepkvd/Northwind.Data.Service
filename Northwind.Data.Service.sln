@@ -43,7 +43,6 @@ Global
 		Enterprise.Lib.Service\Enterprise.Lib.Service.projitems*{583c6eca-3a2c-4ab3-812a-290269a34e48}*SharedItemsImports = 13
 		Enterprise.Lib.Logging\Enterprise.Lib.Logging.projitems*{63b1aefd-0029-40f4-a159-ea044c39527f}*SharedItemsImports = 13
 		Enterprise.Lib.Core\Enterprise.Lib.Core.projitems*{be36707b-51c3-4a6d-a54e-4a26ddb80e84}*SharedItemsImports = 13
-		Enterprise.Lib.DataAccess\Enterprise.Lib.DataAccess.projitems*{f52db0a0-ad21-465d-8cf7-2a86c2b587af}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
