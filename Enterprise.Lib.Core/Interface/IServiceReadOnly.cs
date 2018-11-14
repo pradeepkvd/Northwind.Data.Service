@@ -7,8 +7,8 @@ namespace Enterprise.Lib.Core.Interface
 {
     public interface IServiceReadOnly<TModel> : IService, IDisposable
     {
-        IEnumerable<TModel> GetAll();
-        Task<IEnumerable<TModel>> GetAllAsync();
+        IEnumerable<dynamic> GetCollections();
+        Task<IEnumerable<dynamic>> GetCollectionsAsync();
 
         IEnumerable<dynamic> GetAll(object item);
         Task<IEnumerable<dynamic>> GetAllAsync(object item);

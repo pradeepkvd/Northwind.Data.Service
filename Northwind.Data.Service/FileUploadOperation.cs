@@ -1,16 +1,13 @@
 ﻿using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Northwind.Data.Service
 {
     /// <summary>
     /// 
     /// </summary>
-    /// <seealso cref="Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter" />
+    /// <seealso cref="IOperationFilter" />
     public class FileUploadOperation : IOperationFilter
     {
         /// <summary>
@@ -18,7 +15,7 @@ namespace Northwind.Data.Service
         /// </summary>
         /// <param name="operation">The operation.</param>
         /// <param name="context">The context.</param>
-        public void Apply(Swashbuckle.AspNetCore.Swagger.Operation operation, OperationFilterContext context)
+        public void Apply(Operation operation, OperationFilterContext context)
         {
             if (operation.OperationId.ToLower() == "apiinboundpost")
             {

@@ -9,5 +9,6 @@
     <Import_RootNamespace>Northwind.Customer</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CustomerProfile.cs" />
   </ItemGroup>
 </Project>

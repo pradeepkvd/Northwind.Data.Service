@@ -4,4 +4,25 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <Import Project="..\Enterprise.Lib.Core\Enterprise.Lib.Core.projitems" Label="Shared" />
+
+  <Import Project="..\Enterprise.Lib.DataAccess\Enterprise.Lib.DataAccess.projitems" Label="Shared" />
+
+  <Import Project="..\Enterprise.Lib.Logging\Enterprise.Lib.Logging.projitems" Label="Shared" />
+
+  <Import Project="..\Enterprise.Lib.Service\Enterprise.Lib.Service.projitems" Label="Shared" />
+
+  <Import Project="..\Northwind.Customer\Northwind.Customer.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.7.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="ServiceStack" Version="5.4.0" />
+  </ItemGroup>
+
 </Project>

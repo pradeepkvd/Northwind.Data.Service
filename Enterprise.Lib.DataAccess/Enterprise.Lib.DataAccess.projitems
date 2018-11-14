@@ -13,8 +13,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)DataAccessExtension.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DbUtility.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DynamicQuery.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Repository.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)RepositoryEF.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RepositoryMongo.cs" />
   </ItemGroup>
 </Project>

@@ -11,19 +11,15 @@ namespace Enterprise.Lib.Service
     {
         private readonly IRepository<TEntity> _repository;
 
-        /// <summary>
-        /// GET All
-        /// </summary>
-        /// <returns></returns>
-        public virtual IEnumerable<TEntity> GetAll()
+        public IEnumerable<dynamic> GetCollections()
         {
-            return _repository.GetAll();
-        }
-        public virtual Task<IEnumerable<TEntity>> GetAllAsync()
-        {
-            return _repository.GetAllAsync();
+            return _repository.GetCollections();
         }
 
+        public Task<IEnumerable<dynamic>> GetCollectionsAsync()
+        {
+            return _repository.GetCollectionsAsync();
+        }
         /// <summary>
         /// GET BY ID
         /// </summary>
@@ -145,6 +141,8 @@ namespace Enterprise.Lib.Service
             // TODO: uncomment the following line if the finalizer is overridden above.
             // GC.SuppressFinalize(this);
         }
+
+       
 
         #endregion IDisposable Support
     }

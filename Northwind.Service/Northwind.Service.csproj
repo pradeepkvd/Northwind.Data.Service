@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Customer.Core\Northwind.Customer.Core.csproj" />
+    <ProjectReference Include="..\Northwind.Customer.DAL.Mongo\Northwind.Customer.DAL.Mongo.csproj" />
+  </ItemGroup>
+
 </Project>
